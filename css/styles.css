@@ -264,6 +264,23 @@ body {
 .person-desc .description-item {
   text-align: center;
 }
+.position-desc {
+  margin-bottom: 8px;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
 /* Кінець Team section */
 /* футер */
 .footer-section {
@@ -273,6 +290,7 @@ body {
 .footer-container .logotype {
   margin-bottom: 16px;
 }
+
 /* Сторінка Портфоліо */
 .portfolio-section {
   padding: 96px 0 120px;
