@@ -1,0 +1,312 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-color: #4d5ae5;
+  --secondary-accent-color: #404bbf;
+  --primery-page-color-dark: #434455;
+  --secondary-page-color-dark: #2e2f42;
+  --text-color-light: #ffffff;
+  --secondary-text-color-light: #f4f4fd;
+  --primary-font-size: 16px;
+  --secondary-font-size: 20px;
+  --primary-line-height: 1.5;
+  --primary-background-color: #ffffff;
+  --secondary-bg-color: #f4f4fd;
+  --accent-background-color: #2e2f42;
+  --portfolio-btn-bg: #e7e9fc;
+}
+/* скидання дефолтних стилів та нормалізація стилів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* наслідування стилів */
+body {
+  font-family: var(--primary-font);
+  font-size: var(--primary-font-size);
+  color: var(--primery-page-color-dark);
+  line-height: var(--primary-line-height);
+  background-color: var(--primary-background-color);
+}
+/* компоненти */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.description-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-page-color-dark);
+}
+.suptitle {
+  font-weight: 500;
+  font-size: var(--secondary-font-size);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--secondary-page-color-dark);
+}
+.description-item {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: var(--primary-line-height);
+  font-size: var(--primary-font-size);
+  letter-spacing: 0.02em;
+  color: var(--primery-page-color-dark);
+}
+.description-item-theme-dark {
+  max-width: 264px;
+  color: var(--secondary-text-color-light);
+}
+.logotype {
+  font-family: var(--secondary-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  display: inline-block;
+  margin-right: 76px;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.logotype-item {
+  color: var(--secondary-page-color-dark);
+}
+
+.logotype-item-theme-dark {
+  color: var(--secondary-text-color-light);
+}
+/* /кінець стилів для компонентів */
+/* шапка */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.page-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.menu-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--secondary-page-color-dark);
+  display: block;
+  padding: 24px 0;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--secondary-accent-color);
+}
+.address-list {
+  font-style: normal;
+  margin-left: auto;
+}
+.address-menu {
+  display: flex;
+  gap: 40px;
+}
+.contact-link {
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--primery-page-color-dark);
+  padding: 24px 0;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--secondary-accent-color);
+}
+
+/* /шапка */
+/* основна секція */
+.section {
+  padding: 120px 0;
+}
+.hero-section {
+  background-color: var(--accent-background-color);
+  padding: 188px 0;
+}
+.main-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 48px;
+  letter-spacing: 0.02em;
+  color: var(--text-color-light);
+}
+.modal-btn {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 32px;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--text-color-light);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--secondary-accent-color);
+}
+/* /Кінець основної секції */
+.strenghts-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.strenghts-item {
+  width: calc((100% - 72px) / 4);
+}
+.work-section {
+  padding-top: 0;
+}
+.work-list {
+  display: flex;
+  gap: 24px;
+}
+.work-item {
+  width: calc((100%-48px) / 3);
+}
+/* Team section */
+.team-section {
+  background-color: var(--secondary-bg-color);
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-list-item {
+  background-color: var(--primary-background-color);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.person-desc {
+  padding: 32px 16px;
+}
+.person-desc .suptitle {
+  text-align: center;
+}
+.person-desc .description-item {
+  text-align: center;
+}
+/* Кінець Team section */
+/* футер */
+.footer-section {
+  background-color: var(--accent-background-color);
+  padding: 100px 0;
+}
+.footer-container .logotype {
+  margin-bottom: 16px;
+}
+/* Сторінка Портфоліо */
+.portfolio-section {
+  padding: 96px 0 120px;
+}
+.portfolio-nav {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+.portfolio-btn {
+  padding: 12px 24px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: var(--primary-font-size);
+  line-height: var(--primary-line-height);
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background: var(--secondary-bg-color);
+  border: 1px solid var(--portfolio-btn-bg);
+  border-radius: 4px;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--text-color-light);
+  background: var(--secondary-accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+/* .project-list-item {
+  width: calc((100%-48px) / 3);
+} */
+.project-name {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
