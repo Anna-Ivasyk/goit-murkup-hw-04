@@ -14,6 +14,7 @@
   --secondary-bg-color: #f4f4fd;
   --accent-background-color: #2e2f42;
   --portfolio-btn-bg: #e7e9fc;
+  --accent-icon-color: #8e8f99;
 }
 /* скидання дефолтних стилів та нормалізація стилів */
 h1,
@@ -95,7 +96,7 @@ body {
   color: var(--primery-page-color-dark);
 }
 .description-item-theme-dark {
-  max-width: 264px;
+  width: 264px;
   color: var(--secondary-text-color-light);
 }
 .logotype {
@@ -126,6 +127,8 @@ body {
 }
 
 .page-header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
 }
 .page-nav {
@@ -177,6 +180,7 @@ body {
   padding: 120px 0;
 }
 .hero-section {
+  max-width: 1440px;
   background-color: var(--accent-background-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -184,7 +188,9 @@ body {
     ),
     url('../images/hero/people-office.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  margin: o auto;
   padding: 188px 0;
 }
 
@@ -232,6 +238,15 @@ body {
 .strenghts-item {
   width: calc((100% - 72px) / 4);
 }
+.strenghts-item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
 .work-section {
   padding-top: 0;
 }
@@ -254,9 +269,11 @@ body {
   background-color: var(--primary-background-color);
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .person-desc {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .person-desc .suptitle {
   text-align: center;
@@ -281,20 +298,84 @@ body {
   border-radius: 50%;
   background-color: var(--accent-color);
 }
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--secondary-accent-color);
+}
+.social-list-icon {
+  fill: var(--secondary-bg-color);
+}
 /* Кінець Team section */
 /* Секція Customers */
 .customers-list {
   display: flex;
-  justify-content: center;
   gap: 24px;
+}
+.customers-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+.customers-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--accent-icon-color);
+  color: var(--accent-icon-color);
+}
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: var(--secondary-accent-color);
+  color: var(--secondary-accent-color);
+}
+.customers-list-icon {
+  fill: currentColor;
 }
 /* футер */
 .footer-section {
   background-color: var(--accent-background-color);
   padding: 100px 0;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo-container {
+  margin-right: 120px;
+}
 .footer-container .logotype {
   margin-bottom: 16px;
+}
+.social-media-theme-dark {
+  font-weight: 500;
+  color: var(--text-color-light);
+  margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+.footer-social-icon {
+  fill: var(--secondary-bg-color);
 }
 
 /* Сторінка Портфоліо */
@@ -337,6 +418,14 @@ body {
 /* .project-list-item {
   width: calc((100%-48px) / 3);
 } */
+.project-list-link {
+  display: block;
+}
+.project-list-link:hover,
+.project-list-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .project-name {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
