@@ -282,6 +282,12 @@ body {
   background-color: var(--accent-color);
 }
 /* Кінець Team section */
+/* Секція Customers */
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
 /* футер */
 .footer-section {
   background-color: var(--accent-background-color);
